@@ -1,7 +1,10 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
-import SignIn from './components/SignIn';
+import FixedAppBar from './components/MaterialUI Cookbook/AppBar/FixedAppBar';
+import SignIn from './components/Forms/SignIn';
+//import SignIn from './components/SignIn';
+//import FillingSpace from './components/MaterialUI Cookbook/Grids/FillingSpace';
 
 const useStyles = makeStyles({
     formsContainer: {
@@ -12,13 +15,10 @@ const useStyles = makeStyles({
 })
 
 export default function App(){
-    const styles = useStyles();
+    //const styles = useStyles();
     return (
-        <div>
-            <Typography variant="h3" align="center" color="textPrimary">Forms</Typography>
-            <div className={styles.formsContainer}>
-                <SignIn />
-            </div>
+        <div style={{display: 'flex', width: "100vw", height: "100vh", justifyContent: "center", alignItems: "center", backgroundColor: "skyblue"}}>
+            <SignIn />
         </div>
     )
 }
